@@ -101,7 +101,7 @@ print(person)
 
 ### Modifying Items in a Dictionary
 # syntax
-dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+dct = {'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 'key4': 'value4'}
 dct['key1'] = 'value-one'
 
 person['first_name'] = 'Eyob'
@@ -109,9 +109,9 @@ person['age'] = 252
 
 ### Checking Keys in a Dictionary
 # syntax
-dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
-print('key2' in dct) # True
-print('key5' in dct) # False
+dct = {'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 'key4': 'value4'}
+print('key2' in dct)  # True
+print('key5' in dct)  # False
 
 ### Removing Key and Value Pairs from a Dictionary
 
@@ -121,39 +121,38 @@ print('key5' in dct) # False
 - _del_: removes an item with specified key name
 """
 # syntax
-dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
-dct.pop('key1') # removes key1 item
-dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
-dct.popitem() # removes the last item
-del dct['key2'] # removes key2 item
+dct = {'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 'key4': 'value4'}
+dct.pop('key1')  # removes key1 item
+dct = {'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 'key4': 'value4'}
+dct.popitem()  # removes the last item
+del dct['key2']  # removes key2 item
 
-person.pop('first_name')        # Removes the firstname item
-person.popitem()                # Removes the address item
-del person['is_married']        # Removes the is_married item
+person.pop('first_name')  # Removes the firstname item
+person.popitem()  # Removes the address item
+del person['is_married']  # Removes the is_married item
 
 ### Changing Dictionary to a List of Items
-dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
-print(dct.items()) # dict_items([('key1', 'value1'), ('key2', 'value2'), ('key3', 'value3'), ('key4', 'value4')])
+dct = {'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 'key4': 'value4'}
+print(dct.items())  # dict_items([('key1', 'value1'), ('key2', 'value2'), ('key3', 'value3'), ('key4', 'value4')])
+print(dct.items())
 
 ### Deleting a Dictionary
 # syntax
-dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+dct = {'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 'key4': 'value4'}
 del dct
 
 ### Copy a Dictionary
 # syntax
-dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
-dct_copy = dct.copy() # {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+dct = {'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 'key4': 'value4'}
+dct_copy = dct.copy()  # {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
 
 ### Getting Dictionary Keys as a List
-dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+dct = {'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 'key4': 'value4'}
 keys = dct.keys()
-print(keys)     # dict_keys(['key1', 'key2', 'key3', 'key4'])
+print(keys)  # dict_keys(['key1', 'key2', 'key3', 'key4'])
 
 ### Getting Dictionary Values as a List
 # syntax
-dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+dct = {'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 'key4': 'value4'}
 values = dct.values()
-print(values)     # dict_values(['value1', 'value2', 'value3', 'value4'])
-
-
+print(values)  # dict_values(['value1', 'value2', 'value3', 'value4'])
