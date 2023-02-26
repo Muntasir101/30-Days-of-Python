@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Appointment Schedule</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  </head>
+  <body>
+    <h1>Select a Doctor and Day</h1>
+    <form method="get">
+      <label for="doctor">Doctor:</label>
+      <select id="doctor" name="doctor">
+        {% for doctor in doctors %}
+          <option value="{{ doctor }}">{{ doctor }}</option>
+        {% endfor %}
+      </select>
+      <br>
+      <label for="day">Day:</label>
+      <select id="day" name="day">
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+      </select>
+      <br>
+      <button type="submit">View Schedule</button>
+    </form>
+  </body>
+</html>

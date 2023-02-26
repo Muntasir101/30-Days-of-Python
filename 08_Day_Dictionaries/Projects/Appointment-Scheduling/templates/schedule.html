@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Appointment Schedule</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  </head>
+  <body>
+    <h1>{{ doctor }}'s Schedule for {{ day }}</h1>
+    {% if slots %}
+      <h2>Available Slots:</h2>
+      <ul>
+        {% for slot in slots %}
+          <li>{{ slot }}</li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p>No available slots for this day.</p>
+    {% endif %}
+  </body>
+</html>
