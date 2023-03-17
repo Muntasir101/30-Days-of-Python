@@ -7,7 +7,7 @@
   <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
   </a>
 <sub>Author:
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+ <a href="https://www.linkedin.com" target="_blank">Muntasir</a><br>
 <small>Second Edition: July, 2021</small>
 </sub>
 </div>
